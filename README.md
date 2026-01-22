@@ -1,6 +1,5 @@
 # 🎓 Automated Student Performance Prediction Pipeline
-
-![Pipeline Banner](./notebook/banner.png)  
+ 
 *An end-to-end machine learning system to predict student academic performance using a structured and automated pipeline.*
 
 ---
@@ -55,4 +54,15 @@ This project automates that predictive process using real student data.
 ---
 
 ## 📁 Repository Structure
-
+├── .ebextensions
+├── artifacts/ # Stored models & outputs
+├── catboost_info/ # Model-specific metadata
+├── notebook/ # EDA & pipeline notebooks
+├── src/ # Core pipeline code
+│ ├── components/ # Data/Model modules
+│ └── pipeline/ # Pipeline orchestrator
+├── templates/ # UI templates (if any)
+├── application.py # Main execution script
+├── requirements.txt # Dependencies
+├── setup.py # Package setup
+└── README.md

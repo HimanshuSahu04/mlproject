@@ -53,16 +53,29 @@ This project automates that predictive process using real student data.
 
 ---
 
-## 📁 Repository Structure
-├── .ebextensions
-├── artifacts/ # Stored models & outputs
-├── catboost_info/ # Model-specific metadata
-├── notebook/ # EDA & pipeline notebooks
-├── src/ # Core pipeline code
-│ ├── components/ # Data/Model modules
-│ └── pipeline/ # Pipeline orchestrator
-├── templates/ # UI templates (if any)
-├── application.py # Main execution script
-├── requirements.txt # Dependencies
-├── setup.py # Package setup
-└── README.md
+## 🗂️ Repository Structure (Pipeline Overview)
+
+```mermaid
+graph TD
+    A[Automated Student Performance Prediction Pipeline]
+
+    A --> B[.ebextensions]
+    A --> C[artifacts]
+    A --> D[catboost_info]
+    A --> E[notebook]
+    A --> F[src]
+    A --> G[templates]
+    A --> H[application.py]
+    A --> I[requirements.txt]
+    A --> J[setup.py]
+
+    F --> F1[components]
+    F --> F2[pipeline]
+
+    F1 --> F11[Data Ingestion]
+    F1 --> F12[Data Transformation]
+    F1 --> F13[Model Trainer]
+
+    F2 --> F21[Training Pipeline]
+    F2 --> F22[Prediction Pipeline]
+
